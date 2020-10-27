@@ -236,9 +236,29 @@ namespace RealCalculator
             }
         }
 
-        private void cmbTradingPair_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        // Code to clear default text of edit boxes
+        private void edtAccountBalance_MouseEnter(object sender, MouseEventArgs e)
         {
+            if(edtAccountBalance.Text == "Account Balance") 
+                {
+                    edtAccountBalance.Text = string.Empty;
+                }   
+        }
 
+        private void edtSlPips_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if (edtSlPips.Text == "Stop Loss Pips")
+            {
+                edtSlPips.Text = string.Empty;
+            }
+        }
+
+        private void edtPercentageRisk_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if (edtPercentageRisk.Text == "Percentage Risk")
+            {
+                edtPercentageRisk.Text = string.Empty;
+            }
         }
     }
 }
